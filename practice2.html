@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="text" id="input" oninput=" calculate();"> then <span id="result" ></span>
+<script>
+    function number(num){
+        num = num +1;
+        return num;
+    }
+   function calculate() {
+       let input= parseInt(document.getElementById("input").value);
+       let num= number(input);
+       document.getElementById("result").innerHTML=num;
+   }
+   </script>
+
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="text" id="el">
+<input type="button" value="Search" onclick="StringForm();" id="search">
+<p id="result"></p>
+<script>
+    //let star= promt("Enter a star: ");
+    let star1 = ["Polaris", "Aldebaran", "Deneb", "Vega", "Altair", "Dubhe", "Regulus"];
+    let star2 = ["UrsaMinor", "Tarurus", "Cygnus", "Lyra", "Aquila", "UrsaMajor", "Leo"];
+
+    function StringForm() {
+        let value = document.getElementById('el').value;
+        for (let i = 0; i < star1.length; i++) {
+            if (value === star1[i]) {
+                alert(star1[i] + " : " + star2[i]);
+                // break;
+                return ;//star2[i];
+            }
+        }
+        alert('Not found !');
+        //return false;
+    }
+
+</script>
+</body>
+</html>
